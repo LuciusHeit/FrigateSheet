@@ -1,4 +1,4 @@
-type Arma = {
+export interface Arma {
   nome: string;
   gittata: string;
   danni: number;
@@ -7,12 +7,12 @@ type Arma = {
   extra?: string;
 }
 
-type Tattica = {
+export interface Tattica {
   nome: string;
   min: number;
 }
 
-type Equip = {
+export interface Equip {
   nome: string;
   amount: number;
   max: number;

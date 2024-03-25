@@ -1,0 +1,21 @@
+<h2 mat-dialog-title>Aggiungi arma</h2>
+<mat-dialog-content>
+  <mat-form-field>
+    <label>nome></label>
+    <input type="text" [(ngModel)]="data.nome">
+    <label>gittata></label>
+    <input type="text" [(ngModel)]="data.gittata">
+    <label>danni></label>
+    <input type="number" [(ngModel)]="data.danni">
+    <label>rateo></label>
+    <input type="number" [(ngModel)]="data.rateo">
+    <label>attacchi></label>
+    <input type="number" [(ngModel)]="data.attacchi">
+    <label>extra></label>
+    <input type="text" [(ngModel)]="data.extra">
+  </mat-form-field>
+</mat-dialog-content>
+<mat-dialog-actions>
+  <button mat-button [mat-dialog-close]="null">Annulla</button>
+  <button mat-button [mat-dialog-close]="data" cdkFocusInitial>Ok</button>
+</mat-dialog-actions>

@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Workbench&display=swap');
+
+html {
+  height: 100%;
+  background-color: #222;
+}
+
+body {
+  margin: 0;
+  font-family: "Workbench", sans-serif;
+  height: 100%;
+  background-color: #222;
+  color: azure;
+}
+
+/* active tab */
+::ng-deep .mat-tab-list .mat-tab-labels .mat-tab-label-active {
+  color:azure;
+  background-color: #444;
+}
+/* inactive tab */
+::ng-deep .mat-tab-list .mat-tab-label {
+  color: #bbb;
+  background-color: #333;
+  font-family: "Workbench", sans-serif;
+  font-variation-settings:
+  "BLED" 0,
+  "SCAN" -37;
+
+  width: 50%;
+}
+::ng-deep .mat-label-content {
+
+  color: #bbb;
+}
+/* ink bar */
+::ng-deep .mat-ink-bar {
+  background-color: #7832a2 !important;
+}
+
+
+mat-tab-group {
+  width: 100vw;
+  background-color: #222;
+}
+
+
+.container{
+  width: 90%;
+  margin: auto;
+  padding-top: 20px;
+  font-family: "Workbench", sans-serif;
+  font-variation-settings:
+    "BLED" 0,
+    "SCAN" -37;
+}
+
+input {
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 2px dashed #ddd;
+  background-color: transparent;
+  color: azure;
+  outline: none;
+  font-family: "Workbench", sans-serif;
+  font-variation-settings:
+    "BLED" 0,
+    "SCAN" -37;
+  font-size: 1.5rem;
+  text-align: center;
+  margin-left: 3px;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+  width: 2rem;
+}
+
+.stat{
+  padding: 30px;
+}
+
+.mat-divider {
+  border-top: 2px dashed #444;
+}
+
+
+
+
+/* The container */
+.check-container {
+  display: block;
+  position: relative;
+  padding-left: 3rem;
+  margin-bottom: 2.2rem;
+  margin-left: 0.5rem;
+  cursor: pointer;
+  font-size: 2rem;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.check-container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 2rem;
+  width: 2rem;
+  background-color: transparent;
+  border: 1px #ddd dashed;
+  border-radius: 0.2rem;
+}
+
+/* On mouse-over, add a grey background color */
+.check-container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.check-container input:checked ~ .checkmark {
+  background-color: #333;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.check-container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.check-container .checkmark:after {
+  left: 0.7rem;
+  top: 0.4rem;
+  width: 0.5rem;
+  height: 0.9rem;
+  border: dotted azure;
+  border-width: 0 0.2rem 0.2rem 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+
+textarea{
+  width: 60%;
+  margin-left: 1rem;
+  background: transparent;
+  border: none;
+  border-left: 2px dashed #ddd;
+  height: 80%;
+  resize: none;
+  color: azure;
+  font-family: "Workbench", sans-serif;
+  font-variation-settings:
+    "BLED" 0,
+    "SCAN" -37;
+  font-size: 1rem;
+}
+
+h3{
+  text-align: center;
+}
+
+.button-addrow{
+  border: 2px dashed #ddd;
+  border-radius: 1rem;
+  width: 2rem;
+  height: 2rem;
+  margin: auto;
+  display: block;
+}
+.button-addrow:hover{
+  background-color: #333;
+}
+.button-addrow:active{
+  background-color: azure;
+  color: #333;
+  border-color: #333;
+}
+
+.arma{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Workbench", sans-serif;
+  font-variation-settings:
+    "BLED" 0,
+    "SCAN" -37;
+}
+
+.inv-list{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.inv-list > input{
+  font-size: 1rem !important;
+}
+
+
+.azioni{
+  text-align: center;
+}
